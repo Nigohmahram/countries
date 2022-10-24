@@ -1,42 +1,42 @@
 /* FONTS  */
 @font-face {
-     font-family: 'Nunito Sans';
-     src: url('../fonts/NunitoSans-Light.woff2') format('woff2'),
-         url('../fonts/NunitoSans-Light.woff') format('woff');
-     font-weight: 300;
-     font-style: normal;
-     font-display: swap;
- }
+    font-family: 'Nunito Sans';
+    src: url('../fonts/NunitoSans-Light.woff2') format('woff2'),
+    url('../fonts/NunitoSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
 
- @font-face {
-     font-family: 'Nunito Sans';
-     src: url('../fonts/NunitoSans-SemiBold.woff2') format('woff2'),
-         url('../fonts/NunitoSans-SemiBold.woff') format('woff');
-     font-weight: 600;
-     font-style: normal;
-     font-display: swap;
- }
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('../fonts/NunitoSans-SemiBold.woff2') format('woff2'),
+    url('../fonts/NunitoSans-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
 
- @font-face {
-     font-family: 'Nunito Sans';
-     src: url('../fonts/NunitoSans-Regular.woff2') format('woff2'),
-         url('../fonts/NunitoSans-Regular.woff') format('woff');
-     font-weight: normal;
-     font-style: normal;
-     font-display: swap;
- }
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('../fonts/NunitoSans-Regular.woff2') format('woff2'),
+    url('../fonts/NunitoSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
- @font-face {
-     font-family: 'Nunito Sans';
-     src: url('../fonts/2') format('woff2'),
-         url('../fonts/') format('woff');
-     font-weight: bold;
-     font-style: normal;
-     font-display: swap;
- }
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('../fonts/2') format('woff2'),
+    url('../fonts/') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
 
- /* ROOT  */
- :root{
+/* ROOT  */
+:root{
     --color-heading-and-text: #111517;
     --body-bg: #fafafa;
     --element-bg: #fff;
@@ -46,60 +46,117 @@
     --font-weight4: normal;
     --font-weight6: 600;
     --font-weight8: bold;
- }
+}
 
 /* GLOBALL */
 
 html{
-     height: 100%;
-     box-sizing: border-box;
-     scroll-behavior: smooth;
+    height: 100%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 *,
 *::before,
 *::after{
-     box-sizing:border-box;
+    box-sizing:border-box;
 }
 a{
     text-decoration: none;
 }
 
 body{
-     display: flex;
-     height: 100%;
-     padding: 0;
-     margin: 0;
-     flex-direction: column;
-     background-color: var(--body-bg);
-     color: var(--color-heading-and-text);
-     font-family: "Arial" sans-serif;
-     font-size: 14px;
-     line-height: 16px;
+    display: flex;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    background-color: var(--body-bg);
+    color: var(--color-heading-and-text);
+    font-family: "Arial" sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    transition: background-color 0.4s ease,
+    color 0.4s ease;
 }
 
-img{
-     max-width: 100%;
-     height: auto;
-}
+    img{
+        max-width: 100%;
+        height: auto;
+    }
 
-/* DARK-MODE */
-.dark-mode{
-    --color-heading-and-text: #fff;
-    --body-bg: #202C36;
-    --element-bg: #2b3844;
-}
+    /* DARK-MODE */
+    .dark-mode{
+        --color-heading-and-text: #fff;
+        --body-bg: #202C36;
+        --element-bg: #2b3844;
+    }
 
-/* CONTAINER  */
+    /* CONTAINER  */
 
-.container{
-     width: 100%;
-     max-width: 1320px;
-     padding-left: 20px;
-     padding-right: 20px;
-     margin-left: auto;
-     margin-right: auto;
-}
-.main-content{
-    flex-grow: 1;
-}
+    .container{
+        width: 100%;
+        max-width: 1320px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .main-content{
+        flex-grow: 1;
+    }
+
+
+
+    .site-header {
+        padding: 20px 0;
+        background-color: var(--element-bg);
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0562);
+    }
+    .site-header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .site-header-logo {
+        flex-shrink: 0;
+        font-size: 24px;
+        line-height: normal;
+        font-weight: var(--font-weight8);
+        color: var(--color-heading-and-text);
+    }
+    .site-header-logo:hover{
+        opacity: 0.8;
+    }
+    .site-header-logo:active{
+        opacity: 0.6;
+    }
+    .site-header-theme-toggler {
+        padding: 0;
+        border: 0;
+        background-color: transparent;
+        color: var(--color-heading-and-text);
+    }
+    .site-header-theme-toggler:hover{
+        opacity: 0.8;
+    }
+    .site-header-theme-toggler:active{
+        opacity: 0.6;
+    }
+    .site-header-theme-toggler-inner {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+    .site-header-theme-toggler-inner-img{
+        flex-shrink: 0;
+    }
+    .site-header-theme-toggler-text {
+        flex-shrink: 0;
+        margin-left: 8px;
+        font-size: 16px;
+        line-height: 22px;
+        font-family: var(--add-font-family);
+        font-weight: var(--font-weight6);
+    }
