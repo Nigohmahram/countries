@@ -169,6 +169,7 @@ body{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 48px;
     }
     .filters-search-input {
         max-width: 480px;
@@ -198,4 +199,66 @@ body{
         font-family: var(--add-font-family);
         font-weight: var(--font-weight4);
         color: var(--color-heading-and-text);
+    }
+
+    /* INDEX-COUTRIES  */
+
+    .index-countries-list {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
+        margin-left: -75px;
+        margin-bottom: -75px;
+        list-style: none;
+    }
+    .index-countries-item {
+        width: calc(25% - 75px);
+        margin-left: 75px;
+        margin-bottom: 75px;
+    }
+    .index-country {
+        border-radius: 7px;
+        overflow: hidden;
+        background-color: var(--element-bg);
+        color: var(--color-heading-and-text);
+        box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.03);
+    }
+    .index-country-flag {
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+    }
+    .index-country-info {
+        padding: 24px 24px 24px;
+    }
+    .index-country-name {
+        margin-bottom: 16px;
+        margin-top: 0;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: var(--font-weight8);
+    }
+    .index-country-link{
+        color: var(--color-heading-and-text);
+        font-family: var(--add-font-family);
+    }
+    .index-country-detials {
+        margin: 0;
+    }
+    .index-country-detials-item{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .index-country-detials-item:not(:last-child) {
+        margin-bottom: 8px;
+    }
+    .index-country-detials-title {
+        font-size: 14px;
+        line-height: 16px;
+        font-family: var(--add-font-family);
+        font-weight: var(--font-weight6);
+    }
+    .index-country-detials-value {
+        margin-left: 4px;
     }
