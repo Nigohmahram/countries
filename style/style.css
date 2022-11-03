@@ -2,7 +2,7 @@
 @font-face {
     font-family: 'Nunito Sans';
     src: url('../fonts/NunitoSans-Light.woff2') format('woff2'),
-    url('../fonts/NunitoSans-Light.woff') format('woff');
+        url('../fonts/NunitoSans-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -11,7 +11,7 @@
 @font-face {
     font-family: 'Nunito Sans';
     src: url('../fonts/NunitoSans-SemiBold.woff2') format('woff2'),
-    url('../fonts/NunitoSans-SemiBold.woff') format('woff');
+        url('../fonts/NunitoSans-SemiBold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -20,7 +20,7 @@
 @font-face {
     font-family: 'Nunito Sans';
     src: url('../fonts/NunitoSans-Regular.woff2') format('woff2'),
-    url('../fonts/NunitoSans-Regular.woff') format('woff');
+        url('../fonts/NunitoSans-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -29,14 +29,14 @@
 @font-face {
     font-family: 'Nunito Sans';
     src: url('../fonts/2') format('woff2'),
-    url('../fonts/') format('woff');
+        url('../fonts/') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 
 /* ROOT  */
-:root{
+:root {
     --color-heading-and-text: #111517;
     --body-bg: #fafafa;
     --element-bg: #fff;
@@ -50,7 +50,7 @@
 
 /* GLOBALL */
 
-html{
+html {
     height: 100%;
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -58,14 +58,15 @@ html{
 
 *,
 *::before,
-*::after{
-    box-sizing:border-box;
+*::after {
+    box-sizing: border-box;
 }
-a{
+
+a {
     text-decoration: none;
 }
 
-body{
+body {
     display: flex;
     height: 100%;
     padding: 0;
@@ -77,16 +78,16 @@ body{
     font-size: 14px;
     line-height: 16px;
     transition: background-color 0.4s ease,
-    color 0.4s ease;
+        color 0.4s ease;
 }
 
-img{
+img {
     max-width: 100%;
     height: auto;
 }
 
 /* DARK-MODE */
-.dark-mode{
+.dark-mode {
     --color-heading-and-text: #fff;
     --body-bg: #202C36;
     --element-bg: #2b3844;
@@ -94,7 +95,7 @@ img{
 
 /* CONTAINER  */
 
-.container{
+.container {
     width: 100%;
     max-width: 1320px;
     padding-left: 20px;
@@ -102,11 +103,13 @@ img{
     margin-left: auto;
     margin-right: auto;
 }
-.main-content{
+
+.main-content {
     flex-grow: 1;
     padding: 48px 0;
 }
-.main-content-inner{
+
+.main-content-inner {
     padding-top: 80px;
 }
 
@@ -117,6 +120,7 @@ img{
     background-color: var(--element-bg);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0562);
 }
+
 .site-header-container {
     display: flex;
     justify-content: space-between;
@@ -130,32 +134,40 @@ img{
     font-weight: var(--font-weight8);
     color: var(--color-heading-and-text);
 }
-.site-header-logo:hover{
+
+.site-header-logo:hover {
     opacity: 0.8;
 }
-.site-header-logo:active{
+
+.site-header-logo:active {
     opacity: 0.6;
 }
+
 .site-header-theme-toggler {
     padding: 0;
     border: 0;
     background-color: transparent;
     color: var(--color-heading-and-text);
 }
-.site-header-theme-toggler:hover{
+
+.site-header-theme-toggler:hover {
     opacity: 0.8;
 }
-.site-header-theme-toggler:active{
+
+.site-header-theme-toggler:active {
     opacity: 0.6;
 }
+
 .site-header-theme-toggler-inner {
     cursor: pointer;
     display: flex;
     align-items: center;
 }
-.site-header-theme-toggler-inner-img{
+
+.site-header-theme-toggler-inner-img {
     flex-shrink: 0;
 }
+
 .site-header-theme-toggler-text {
     flex-shrink: 0;
     margin-left: 8px;
@@ -174,9 +186,10 @@ img{
     align-items: center;
     margin-bottom: 48px;
 }
+
 .filters-search-input {
     max-width: 480px;
-    padding: 18px 74px ;
+    padding: 18px 74px;
     border: 0;
     border-radius: 5px;
     font-size: 14px;
@@ -187,6 +200,7 @@ img{
     color: var(--color-heading-and-text);
     box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0562);
 }
+
 .filters-region-select {
     min-width: 200px;
     padding: 18px 24px;
@@ -196,7 +210,8 @@ img{
     color: var(--color-heading-and-text);
     box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0562);
 }
-option{
+
+option {
     font-size: 14px;
     line-height: 20px;
     font-family: var(--add-font-family);
@@ -215,11 +230,13 @@ option{
     margin-bottom: -75px;
     list-style: none;
 }
+
 .index-countries-item {
     width: calc(25% - 75px);
     margin-left: 75px;
     margin-bottom: 75px;
 }
+
 .index-country {
     border-radius: 7px;
     overflow: hidden;
@@ -227,14 +244,17 @@ option{
     color: var(--color-heading-and-text);
     box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.03);
 }
+
 .index-country-flag {
     width: 100%;
     height: 160px;
     object-fit: cover;
 }
+
 .index-country-info {
     padding: 24px 24px 24px;
 }
+
 .index-country-name {
     margin-bottom: 16px;
     margin-top: 0;
@@ -242,26 +262,32 @@ option{
     line-height: 26px;
     font-weight: var(--font-weight8);
 }
-.index-country-link{
+
+.index-country-link {
     color: var(--color-heading-and-text);
     font-family: var(--add-font-family);
 }
+
 .index-country-detials {
     margin: 0;
 }
-.index-country-detials-item{
+
+.index-country-detials-item {
     display: flex;
     flex-wrap: wrap;
 }
+
 .index-country-detials-item:not(:last-child) {
     margin-bottom: 8px;
 }
+
 .index-country-detials-title {
     font-size: 14px;
     line-height: 16px;
     font-family: var(--add-font-family);
     font-weight: var(--font-weight6);
 }
+
 .index-country-detials-value {
     margin-left: 4px;
 }
@@ -274,6 +300,7 @@ option{
 .country-page-back-wrapper {
     margin-bottom: 80px;
 }
+
 .country-page-back-link {
     padding: 10px 40px;
     border-radius: 6px;
@@ -283,28 +310,34 @@ option{
     color: var(--color-heading-and-text);
     box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3);
 }
-.country-page-back-link:hover{
+
+.country-page-back-link:hover {
     opacity: 0.8;
 }
-.country-page-back-link:hover{
+
+.country-page-back-link:hover {
     opacity: 0.6;
 }
+
 .country-page-back-icon {
     width: 20px;
     height: 20px;
     margin-right: 10px;
 }
+
 .country-page-back-text {
     font-size: 16px;
     line-height: 20px;
     font-family: var(--add-font-family);
     font-weight: var(--font-weight4);
 }
-.country-page-flag-info{
+
+.country-page-flag-info {
     display: flex;
 }
+
 /* COUNTRY-PAGE-FLAG  */
-.country-page-flag{
+.country-page-flag {
     margin-right: 120px;
     width: 560px;
     height: 401px;
@@ -313,10 +346,12 @@ option{
     overflow: hidden;
     box-shadow: 0px 0px 14px 4px rgba(0, 0, 0, 0.3);
 }
+
 .country-page-info {
     width: 600px;
     padding-top: 30px;
 }
+
 .country-page-title {
     margin-top: 0;
     margin-bottom: 14px;
@@ -325,27 +360,33 @@ option{
     font-size: 32px;
     line-height: 44px;
 }
+
 .country-page-dls-wrapper {
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
 }
+
 .country-page-details {
     width: 250px;
 }
-.country-page-details-item{
+
+.country-page-details-item {
     display: flex;
     text-align: center;
 }
+
 .country-page-details-item:not(:last-child) {
     margin-bottom: 12px;
 }
+
 .country-page-details-title {
     margin-right: 4px;
     font-weight: var(--font-weight6);
     font-size: 16px;
     line-height: 32px;
 }
+
 .country-page-details-value {
     margin-right: 4px;
     font-size: 16px;
@@ -353,11 +394,13 @@ option{
     font-weight: var(--font-weight3);
     margin: 0;
 }
+
 /* COUNTRY-PAGE-BORDER-COUNTRIUS */
 .country-page-border-countries {
     display: flex;
     align-items: center;
 }
+
 .country-page-border-countries-heading {
     margin-top: 0;
     margin-bottom: 0;
@@ -366,10 +409,12 @@ option{
     font-size: 16px;
     line-height: 24px;
 }
+
 .country-page-border-countries-list {
     display: flex;
     flex-wrap: wrap;
 }
+
 .country-page-border-countries-link {
     min-width: 96px;
     padding: 5px 10px;
@@ -382,16 +427,31 @@ option{
     font-size: 14px;
     line-height: 19px;
     font-weight: var(--font-weight3);
-    box-shadow: 0px 0px 4px 1px rgba( 0, 0, 0, 0.1);
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.1);
     transition: background-color 0.4s ease,
-    color 0.4s ease;
+        color 0.4s ease;
 }
-.country-page-border-countries-link:not(:last-child){
+
+.country-page-border-countries-link:not(:last-child) {
     margin-right: 10px;
 }
-.country-page-border-countries-link:hover{
+
+.country-page-border-countries-link:hover {
     opacity: 0.8;
 }
-.country-page-border-countries-link:active{
+
+.country-page-border-countries-link:active {
     opacity: 0.6;
+}
+
+.filter-search-wrapper {
+    position: relative;
+}
+
+.filter-search-icon {
+    position: absolute;
+    top: 19px;
+    left: 32px;
+    color: var(--search-text);
+    pointer-events: none;
 }
